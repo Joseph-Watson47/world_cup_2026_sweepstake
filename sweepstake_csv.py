@@ -40,16 +40,16 @@ print("=" * 25)
 
 print("STARTING DRAW")
 print("=" * 13)
-time.sleep(2)
+time.sleep(0)
 
 for player, teams in draw.items():
     print(f"\n{player}")
     print("-" * len(player))
-    time.sleep(1)
+    time.sleep(0)
 
     for pot_num, team in teams:
         print(f"Pot {pot_num}: {team}")
-        time.sleep(0.7)
+        time.sleep(0)
 
 with open("draw_results.csv", "w", newline="", encoding="utf-8") as f:
     writer = csv.writer(f)
